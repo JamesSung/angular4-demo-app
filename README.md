@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Play the app
 
-Click here to see the app => <a href="https://jamessung.github.io">Go To App</a>
+Click here to see the app => <a href="https://jamessung.github.io">Play The App</a>
 
 
 ## Development server
