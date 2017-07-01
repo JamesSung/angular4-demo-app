@@ -1,0 +1,36 @@
+    <div  class="ticket">
+        <h4 class="sansserif">Flight List: </h4>
+        <form [formGroup] = "flightForm" (ngSubmit) = "confirmBooking(flightForm.value)">
+        <table>
+            <tbody>
+                <ng-template ngFor [ngForOf]="flightList" let-flight let-i="index" >
+                  <tr id="list_tr"><td class="left">Flight {{i+1}} </td><td class="right"> </td></tr>
+                  <tr id="list_tr">
+                        <td class="left">
+                        {{flight.planeName}}, {{flight.company}} <br/>  
+                        From: {{flight.departure.name}}( {{flight.departure.code}} ) - To: {{flight.arrival.name}}( {{flight.arrival.code}} ) <br/>
+                        Departure Date: {{flight.departureDate}}
+                        </td>
+                        <td class="right">Price: {{flight.price}} C$<br/> </td>
+                        <input type="hidden" name="flightid{{i}}" value="{{flight.id}}"/>
+                  </tr>
+                  <tr class="blank"><td class="left"></td><td class="right"> </td></tr>
+                  <tr class="blank"><td class="left"></td><td class="right"> </td></tr>
+                </ng-template>
+            </tbody>
+        </table>
+        	<input class="button" type="button" value="Back" (click)="back()"/>
+        	Email: <input type="email" id="booker" value="{{booker}}" formControlName="booker" ngModel required email />
+       		Password: <input type="password" id="password" value="{{password}}" formControlName="password" />
+        	<input class="button" type="submit" value="Confirm" [disabled]="!flightForm.valid" />
+          <div *ngIf="formErrors.booker" class="alert alert-danger">{{ formErrors.booker }}</div>
+          <div *ngIf="formErrors.password" class="alert alert-danger">{{ formErrors.password }}</div>
+        </form>
+        <br />
+
+	</div>
+	
+	<div id="alert">
+	  <span class="closebtn" onclick="">&times;</span> 
+	  <strong>Info:</strong> Please fill the email and password.
+	</div>

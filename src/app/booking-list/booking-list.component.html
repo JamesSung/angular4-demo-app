@@ -1,0 +1,34 @@
+
+    <div  class="ticket">
+        <h4 class="sansserif">Booking List: </h4>
+        <form [formGroup] = "bookingForm" (ngSubmit) = "searchBookings(bookingForm.value)">
+            Email: <input type="email" id="booker" value="{{booker}}" formControlName="booker"  ngModel required email />
+        		Password: <input type="password"  id="password" value="{{password}}" formControlName="password" />
+        	<input class="button" type="submit" value="Search" />
+          <div *ngIf="formErrors.booker" class="alert alert-danger">{{ formErrors.booker }}</div>
+          <div *ngIf="formErrors.password" class="alert alert-danger">{{ formErrors.password }}</div>
+
+        </form>
+        <table>
+            <tbody>
+              <ng-template ngFor [ngForOf]="bookingList" let-booking let-i="index" >
+                <tr class="booking" >
+                  <td class="left">Booking {{i+1}} </td>
+                  <td class="right"> {{booking.booker}}, {{booking.bookDate}} </td></tr>
+                  <ng-template ngFor [ngForOf]="booking.flights" let-flight let-j="index" >
+                    <tr id="list_tr"><td class="left">Flight {{j+1}} </td><td class="right"> </td></tr>
+                    <tr id="list_tr">
+                          <td class="left">
+                          {{flight.planeName}}, {{flight.company}} <br/>  
+                          From: {{flight.departure.name}} ( {{flight.departure.code}} ) - To: {{flight.arrival.name}} ( {{flight.arrival.code}} ) <br/>
+                          Departure Date: {{flight.departureDate}}
+                          </td>
+                          <td class="right">Price: {{flight.price}} C$<br/> </td>
+                    </tr>
+                  </ng-template>
+                <tr class="blank"><td class="left"></td><td class="right"> </td></tr>
+              </ng-template>
+            </tbody>
+        </table>
+
+	</div>

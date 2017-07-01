@@ -1,0 +1,165 @@
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#signiture {
+    position:fixed;
+    right: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: darkcyan;
+    text-shadow: 1px 1px 1px lightblue;
+}
+body {
+    background-color: darkgrey;
+}
+.center {
+    margin: auto;
+    padding: 10px;
+    background-color: lightblue;
+    width: 80%;
+    border: 1px solid white;
+}
+.left {
+    text-align: left;
+    padding: 5px;
+}
+.right {
+    text-align: right;
+    padding: 5px;
+}
+.ticket {
+    margin: auto;
+    padding: 10px;
+    background-color: lightblue;
+    width: 60%;
+    border: 1px solid white;
+}     
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 5px;
+}
+
+#list_tr:nth-child(even){background-color: #f2f2f2}
+
+tr {
+    background-color: white;
+}			
+tr.booking {
+    background-color: #777777;
+    color: black;
+}			
+tr.blank {
+    background-color: lightblue;
+}			
+th {
+    background-color: #666666;
+    color: white;
+    font-size: 14px;
+}
+input[type=text],input[type=password],input[type=email] {
+    width: 150px;
+    padding: 5px 10px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: lightpink;
+    color: white;
+}
+input[type=date] {
+    width: 130px;
+    padding: 2px 1px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: lightpink;
+    color: white;
+}
+input[type=submit]:hover, input[type=button]:hover {
+    color: hotpink;
+}                          
+select {
+    width: 160px;
+    height: 25px;
+    line-height: 25px;
+    padding: 2px 1px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: none;
+    background: lightpink;
+    background-color: lightpink;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: lightgreen;
+}
+a:hover {
+    color: hotpink;
+}
+.button {
+    background-color: #666666;
+    border: none;
+    color: white;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+#alert {
+    position:fixed;
+    top: 30%;
+    left: 50%;
+    width:30em;
+    height:4em;
+    margin-top: -2em; 
+    margin-left: -15em;
+    background-color: #ff9800;
+    color: black;
+    text-align: center;
+    border: 1px solid #555555;
+    padding: 1em;
+    display: none;
+}
+#menu {
+    position:fixed;
+    right: 20%;
+    color: white;
+    text-align: center;
+}
+#site {
+    position:fixed;
+    left: 10%;
+    color: white;
+    text-align: center;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+}
+p {
+    color: #555555;
+    font-size: 14px;
+}			

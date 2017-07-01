@@ -1,0 +1,253 @@
+{
+    "departure": "YYZ",
+    "arrival": "JFK",
+    "departureDate": "2017-08-01",
+    "returnDate": "2017-08-30",
+ 
+    "airportList": [
+      {
+        "code": "YYZ",
+        "name": "Pearson",
+        "city": "Toronto",
+        "country": "Canada"
+      },
+      {
+        "code": "JFK",
+        "name": "John F. Keneny",
+        "city": "New York",
+        "country": "USA"
+      }   
+    ],
+
+    "flightList": [
+                    {
+                        "id":"abcdefg_1",
+                        "planeName": "Boing 737",
+                        "company": "Air Canada",
+                        "departureDate": "2017-07-01",
+                        "price": "200",
+                        "departure":{
+                                    "code": "YYZ",
+                                    "name": "Pearson",
+                                    "city": "Toronto",
+                                    "country": "Canada"
+                        },
+                        "arrival":{
+                                    "code": "JFK",
+                                    "name": "John F. Kenedy",
+                                    "city": "New York",
+                                    "country": "USA"
+                        }
+                    },
+                    {
+                        "id":"abcdefg_2",
+                        "planeName": "Boing 737",
+                        "company": "Westjet",
+                        "departureDate": "2017-07-08",
+                        "price": "200",
+                        "departure":{
+                                    "code": "JFK",
+                                    "name": "John F. Kenedy",
+                                    "city": "New York",
+                                    "country": "USA"
+                        },
+                        "arrival":{
+                                    "code": "YYZ",
+                                    "name": "Pearson",
+                                    "city": "Toronto",
+                                    "country": "Canada"
+                        }
+                    },
+                    {
+                        "id":"abcdefg_3",
+                        "planeName": "Boing 777",
+                        "company": "Air Canada",
+                        "departureDate": "2017-07-10",
+                        "price": "500",
+                        "departure":{
+                                    "code": "YYZ",
+                                    "name": "Pearson",
+                                    "city": "Toronto",
+                                    "country": "Canada"
+                        },
+                        "arrival":{
+                                    "code": "JFK",
+                                    "name": "John F. Kenedy",
+                                    "city": "New York",
+                                    "country": "USA"
+                        }
+                    },
+                    {
+                        "id":"abcdefg_4",
+                        "planeName": "Boing 747",
+                        "company": "Westjet",
+                        "departureDate": "2017-07-15",
+                        "price": "300",
+                        "departure":{
+                                    "code": "JFK",
+                                    "name": "John F. Kenedy",
+                                    "city": "New York",
+                                    "country": "USA"
+                        },
+                        "arrival":{
+                                    "code": "YYZ",
+                                    "name": "Pearson",
+                                    "city": "Toronto",
+                                    "country": "Canada"
+                        }
+                    },   
+                    {
+                        "id":"abcdefg_5",
+                        "planeName": "Boing 777",
+                        "company": "Air Canada",
+                        "departureDate": "2017-07-20",
+                        "price": "400",
+                        "departure":{
+                                    "code": "YYZ",
+                                    "name": "Pearson",
+                                    "city": "Toronto",
+                                    "country": "Canada"
+                        },
+                        "arrival":{
+                                    "code": "JFK",
+                                    "name": "John F. Kenedy",
+                                    "city": "New York",
+                                    "country": "USA"
+                        }
+                    },
+                    {
+                        "id":"abcdefg_6",
+                        "planeName": "Boing 747",
+                        "company": "Westjet",
+                        "departureDate": "2017-07-25",
+                        "price": "300",
+                        "departure":{
+                                    "code": "JFK",
+                                    "name": "John F. Kenedy",
+                                    "city": "New York",
+                                    "country": "USA"
+                        },
+                        "arrival":{
+                                    "code": "YYZ",
+                                    "name": "Pearson",
+                                    "city": "Toronto",
+                                    "country": "Canada"
+                        }
+                    },
+                    {
+                        "id":"abcdefg_7",
+                        "planeName": "Boing 737",
+                        "company": "Air Canada",
+                        "departureDate": "2017-08-01",
+                        "price": "200",
+                        "departure":{
+                                    "code": "YYZ",
+                                    "name": "Pearson",
+                                    "city": "Toronto",
+                                    "country": "Canada"
+                        },
+                        "arrival":{
+                                    "code": "JFK",
+                                    "name": "John F. Kenedy",
+                                    "city": "New York",
+                                    "country": "USA"
+                        }
+                    },
+                    {
+                        "id":"abcdefg_8",
+                        "planeName": "Boing 737",
+                        "company": "Westjet",
+                        "departureDate": "2017-08-08",
+                        "price": "200",
+                        "departure":{
+                                    "code": "JFK",
+                                    "name": "John F. Kenedy",
+                                    "city": "New York",
+                                    "country": "USA"
+                        },
+                        "arrival":{
+                                    "code": "YYZ",
+                                    "name": "Pearson",
+                                    "city": "Toronto",
+                                    "country": "Canada"
+                        }
+                    },
+                    {
+                        "id":"abcdefg_9",
+                        "planeName": "Boing 777",
+                        "company": "Air Canada",
+                        "departureDate": "2017-08-10",
+                        "price": "500",
+                        "departure":{
+                                    "code": "YYZ",
+                                    "name": "Pearson",
+                                    "city": "Toronto",
+                                    "country": "Canada"
+                        },
+                        "arrival":{
+                                    "code": "JFK",
+                                    "name": "John F. Kenedy",
+                                    "city": "New York",
+                                    "country": "USA"
+                        }
+                    },
+                    {
+                        "id":"abcdefg_12",
+                        "planeName": "Boing 747",
+                        "company": "Westjet",
+                        "departureDate": "2017-08-15",
+                        "price": "300",
+                        "departure":{
+                                    "code": "JFK",
+                                    "name": "John F. Kenedy",
+                                    "city": "New York",
+                                    "country": "USA"
+                        },
+                        "arrival":{
+                                    "code": "YYZ",
+                                    "name": "Pearson",
+                                    "city": "Toronto",
+                                    "country": "Canada"
+                        }
+                    },   
+                    {
+                        "id":"abcdefg_14",
+                        "planeName": "Boing 777",
+                        "company": "Air Canada",
+                        "departureDate": "2017-08-20",
+                        "price": "400",
+                        "departure":{
+                                    "code": "YYZ",
+                                    "name": "Pearson",
+                                    "city": "Toronto",
+                                    "country": "Canada"
+                        },
+                        "arrival":{
+                                    "code": "JFK",
+                                    "name": "John F. Kenedy",
+                                    "city": "New York",
+                                    "country": "USA"
+                        }
+                    },
+                    {
+                        "id":"abcdefg_15",
+                        "planeName": "Boing 747",
+                        "company": "Westjet",
+                        "departureDate": "2017-08-25",
+                        "price": "300",
+                        "departure":{
+                                    "code": "JFK",
+                                    "name": "John F. Kenedy",
+                                    "city": "New York",
+                                    "country": "USA"
+                        },
+                        "arrival":{
+                                    "code": "YYZ",
+                                    "name": "Pearson",
+                                    "city": "Toronto",
+                                    "country": "Canada"
+                        }
+                    }
+
+        ]
+}

@@ -1,0 +1,61 @@
+    <div  class="center">
+        <!--h4 class="sansserif">Search for Flights: </h4--><br/><br/>
+        <form [formGroup] = "searchForm" (ngSubmit) = "submitFlights(searchForm.value)">
+            Fr: 
+            <select formControlName="departure" >
+              <option *ngFor='let airport of airportList' [selected]="airport.code == departure" [value]="airport.code" >{{airport.name}}({{airport.code}})</option>    
+			</select>
+            To: 
+            <select formControlName="arrival" >
+              <option *ngFor='let airport of airportList' [selected]="airport.code == arrival" [value]="airport.code" >{{airport.name}}({{airport.code}})</option>    
+			</select>
+			Dep: <input type="date" value="{{departureDate}}" formControlName="departureDate" (input)="departureDate = $event.target.value">
+			Rtn: <input type="date" value="{{returnDate}}" formControlName="returnDate" (input)="returnDate = $event.target.value">
+            <input class="button" type="submit" value="Search"  />
+          <div *ngIf="formErrors.departureDate" class="alert alert-danger">{{ formErrors.departureDate }}</div>
+          <div *ngIf="formErrors.returnDate" class="alert alert-danger">{{ formErrors.returnDate }}</div>
+        </form>
+        <h5 class="sansserif">Flight List: </h5>
+        <form [formGroup] = "flightForm" (ngSubmit) = "confirmFlights(flightForm.value)">
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Plane</th>
+                    <th>Company</th>
+                    <th>Price</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                    <th>Departure Date</th>
+                </tr>
+            </thead>
+            <tbody>
+              <ng-template ngFor [ngForOf]="flightList" let-flight let-i="index" >
+	              <tr id="list_tr">
+                    <td><input type="checkbox" [value]="flight.id" formControlName="flightid"
+                            (change)="flightids[i]=[$event.target.checked,$event.target.getAttribute('value')]; this.formErrors['checkFlight']=''" ></td>
+                    <td>{{flight.planeName}}</td>
+                    <td>{{flight.company}}</td>
+                    <td>{{flight.price}} C$</td>
+                    <td>{{flight.departure.name}} ({{flight.departure.code}})</td>
+                    <td>{{flight.arrival.name}} ({{flight.arrival.code}})</td>
+                    <td>{{flight.departureDate}}</td>
+                </tr>
+              </ng-template>
+            </tbody>
+        </table>
+        	<input type="hidden" name="departure" value="{{departure}}" formControlName="departure"/>
+        	<input type="hidden" name="arrival" value="{{arrival}}" formControlName="arrival"/>
+        	<input type="hidden" name="departureDate" value="{{departureDate}}" formControlName="departureDate"/>
+        	<input type="hidden" name="returnDate" value="{{returnDate}}" formControlName="returnDate"/>
+        	<input class="button" type="submit" value="Booking" />
+            <div *ngIf="formErrors.checkFlight" class="alert alert-danger">{{ formErrors.checkFlight }}</div>
+        </form>
+        <br/>
+		<p> Note: All the flights departing between departure date and return date will be displaying . Thank you!!</p>
+	</div>
+	
+	<div id="site">
+	  <strong>Powered by Angular 4, Spring ( IoC, MVC, Boot, Data ), and MongoDB</strong> <a href="https://github.com/JamesSung">Source Codes Here</a>
+	</div>
+ 	
