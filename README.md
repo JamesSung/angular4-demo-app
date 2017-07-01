@@ -12,10 +12,6 @@ Click here to see the app => <a href="https://jamessung.github.io">Play The App<
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
@@ -26,8 +22,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Install MongoDB(V3.4.4), download my <a href="https://github.com/JamesSung/springspringspring">SpringSpringSpring</a> project 
+and run the MongoDb and Spring project on a server(preperly Tomcat 7.x or 8.x, port:8081).
+You may need to modify src\app\services\booking.service.ts file.
 
 ## Further help
 
