@@ -23,7 +23,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 If you are not interested in back end programs skip this part. This app can be running well without server side programs.
-Oterwise install MongoDB(V3.4.4) and download my <a href="https://github.com/JamesSung/springspringspring">SpringSpringSpring</a> project.
+Otherwise install MongoDB(V3.4.4 or higher) and download my <a href="https://github.com/JamesSung/springspringspring">SpringSpringSpring</a> project.
 After starting the MongoDb, run the Spring project on server. If you use Eclipse go run as > maven build...  
 put "spring-boot:run" as goal. You may need to modify src\app\services\booking.service.ts file to change the server port.
 One more thing is that I recomend you test with Chrome browser with option --disable-web-security because you are going to
